@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/contact_avatar"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignBottom="@+id/phone_number" />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/name" android:layout_gravity="left|center_vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/phone_number"
+        android:layout_alignStart="@+id/phone_number" />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/phone_number" android:layout_gravity="left|center_vertical" android:textColor="#929292"
+        android:minLines="2" android:ellipsize="end" android:maxLines="2"
+        android:layout_below="@+id/name"
+        android:layout_marginLeft="77dp" />
+        <!--android:layout_toRightOf="@+id/contact_avatar"-->
+
+</RelativeLayout>
